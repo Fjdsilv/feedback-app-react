@@ -7,17 +7,17 @@ export const FeedbackProvider = ({ children }) => {
     const [feedback, setFeedback] = useState([
         {
             id: 1,
-            text: 'This item is from context',
+            text: 'This item is from context 1',
             rating: 10
         },
         {
             id: 2,
-            text: 'This item is from context',
+            text: 'This item is from context 2',
             rating: 9
         },
         {
             id: 3,
-            text: 'This item is from context',
+            text: 'This item is from context 3',
             rating: 7
         },
     ]);
@@ -52,6 +52,7 @@ export const FeedbackProvider = ({ children }) => {
                 deleteFeedback,
                 addFeedback,
                 editFeedback,
+                feedbackEdit,
             }}
         >
         {children}
